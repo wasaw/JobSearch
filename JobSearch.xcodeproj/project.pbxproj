@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		BBFE2F1F2BA1928500094AF1 /* JobSearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFE2F1E2BA1928500094AF1 /* JobSearchApp.swift */; };
-		BBFE2F212BA1928500094AF1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFE2F202BA1928500094AF1 /* ContentView.swift */; };
+		BBFE2F212BA1928500094AF1 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFE2F202BA1928500094AF1 /* TabBar.swift */; };
 		BBFE2F232BA1928700094AF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBFE2F222BA1928700094AF1 /* Assets.xcassets */; };
 		BBFE2F262BA1928700094AF1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBFE2F252BA1928700094AF1 /* Preview Assets.xcassets */; };
+		BBFE2F2D2BA1A43C00094AF1 /* Favourites.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFE2F2C2BA1A43C00094AF1 /* Favourites.swift */; };
+		BBFE2F2F2BA1A7CF00094AF1 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFE2F2E2BA1A7CF00094AF1 /* Model.swift */; };
+		BBFE2F322BA1AA5D00094AF1 /* Responses.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFE2F312BA1AA5D00094AF1 /* Responses.swift */; };
+		BBFE2F342BA1AAF700094AF1 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFE2F332BA1AAF700094AF1 /* Messages.swift */; };
+		BBFE2F362BA1AB8700094AF1 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFE2F352BA1AB8700094AF1 /* Profile.swift */; };
+		BBFE2F382BA1ABFC00094AF1 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFE2F372BA1ABFC00094AF1 /* Search.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BBFE2F1B2BA1928500094AF1 /* JobSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JobSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBFE2F1E2BA1928500094AF1 /* JobSearchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSearchApp.swift; sourceTree = "<group>"; };
-		BBFE2F202BA1928500094AF1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BBFE2F202BA1928500094AF1 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		BBFE2F222BA1928700094AF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBFE2F252BA1928700094AF1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BBFE2F2C2BA1A43C00094AF1 /* Favourites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favourites.swift; sourceTree = "<group>"; };
+		BBFE2F2E2BA1A7CF00094AF1 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		BBFE2F312BA1AA5D00094AF1 /* Responses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Responses.swift; sourceTree = "<group>"; };
+		BBFE2F332BA1AAF700094AF1 /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
+		BBFE2F352BA1AB8700094AF1 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		BBFE2F372BA1ABFC00094AF1 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +63,10 @@
 		BBFE2F1D2BA1928500094AF1 /* JobSearch */ = {
 			isa = PBXGroup;
 			children = (
+				BBFE2F302BA1AA2300094AF1 /* View */,
 				BBFE2F1E2BA1928500094AF1 /* JobSearchApp.swift */,
-				BBFE2F202BA1928500094AF1 /* ContentView.swift */,
 				BBFE2F222BA1928700094AF1 /* Assets.xcassets */,
+				BBFE2F2E2BA1A7CF00094AF1 /* Model.swift */,
 				BBFE2F242BA1928700094AF1 /* Preview Content */,
 			);
 			path = JobSearch;
@@ -65,6 +78,19 @@
 				BBFE2F252BA1928700094AF1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BBFE2F302BA1AA2300094AF1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BBFE2F372BA1ABFC00094AF1 /* Search.swift */,
+				BBFE2F2C2BA1A43C00094AF1 /* Favourites.swift */,
+				BBFE2F312BA1AA5D00094AF1 /* Responses.swift */,
+				BBFE2F332BA1AAF700094AF1 /* Messages.swift */,
+				BBFE2F352BA1AB8700094AF1 /* Profile.swift */,
+				BBFE2F202BA1928500094AF1 /* TabBar.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +163,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBFE2F212BA1928500094AF1 /* ContentView.swift in Sources */,
+				BBFE2F322BA1AA5D00094AF1 /* Responses.swift in Sources */,
+				BBFE2F342BA1AAF700094AF1 /* Messages.swift in Sources */,
+				BBFE2F212BA1928500094AF1 /* TabBar.swift in Sources */,
+				BBFE2F362BA1AB8700094AF1 /* Profile.swift in Sources */,
 				BBFE2F1F2BA1928500094AF1 /* JobSearchApp.swift in Sources */,
+				BBFE2F382BA1ABFC00094AF1 /* Search.swift in Sources */,
+				BBFE2F2D2BA1A43C00094AF1 /* Favourites.swift in Sources */,
+				BBFE2F2F2BA1A7CF00094AF1 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
