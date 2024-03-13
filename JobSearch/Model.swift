@@ -8,5 +8,7 @@
 import SwiftUI
 
 struct CustomColor {
+    static let gray2 = Color("Gray2")
     static let gray3 = Color("Gray3")
+    static let gray4 = Color("Gray4")
 }
