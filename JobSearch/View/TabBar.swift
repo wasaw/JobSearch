@@ -14,13 +14,17 @@ struct TabBar: View {
     
     var body: some View {
         TabView {
-            Search()
-                .tabItem {
-                    VStack {
-                        Text("Поиск")
-                        Image("Search").renderingMode(.template)
-                    }
+            ScrollView {
+                Search()
+            }
+            .padding(.bottom, 5)
+            .background(.black)
+            .tabItem {
+                VStack {
+                    Text("Поиск")
+                    Image("Search").renderingMode(.template)
                 }
+            }
             Favourites()
                 .tabItem {
                     VStack {

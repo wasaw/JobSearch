@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BBCEEF042BA3218B00B11226 /* SearchPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCEEF032BA3218B00B11226 /* SearchPanel.swift */; };
+		BBCEEF062BA3223E00B11226 /* SearchInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCEEF052BA3223E00B11226 /* SearchInformation.swift */; };
+		BBCEEF082BA3232A00B11226 /* SearchVacancy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCEEF072BA3232A00B11226 /* SearchVacancy.swift */; };
 		BBFE2F1F2BA1928500094AF1 /* JobSearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFE2F1E2BA1928500094AF1 /* JobSearchApp.swift */; };
 		BBFE2F212BA1928500094AF1 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFE2F202BA1928500094AF1 /* TabBar.swift */; };
 		BBFE2F232BA1928700094AF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBFE2F222BA1928700094AF1 /* Assets.xcassets */; };
@@ -20,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BBCEEF032BA3218B00B11226 /* SearchPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPanel.swift; sourceTree = "<group>"; };
+		BBCEEF052BA3223E00B11226 /* SearchInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInformation.swift; sourceTree = "<group>"; };
+		BBCEEF072BA3232A00B11226 /* SearchVacancy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVacancy.swift; sourceTree = "<group>"; };
 		BBFE2F1B2BA1928500094AF1 /* JobSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JobSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBFE2F1E2BA1928500094AF1 /* JobSearchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSearchApp.swift; sourceTree = "<group>"; };
 		BBFE2F202BA1928500094AF1 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
@@ -44,6 +50,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BBCEEF022BA3214D00B11226 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				BBFE2F372BA1ABFC00094AF1 /* Search.swift */,
+				BBCEEF032BA3218B00B11226 /* SearchPanel.swift */,
+				BBCEEF052BA3223E00B11226 /* SearchInformation.swift */,
+				BBCEEF072BA3232A00B11226 /* SearchVacancy.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		BBFE2F122BA1928500094AF1 = {
 			isa = PBXGroup;
 			children = (
@@ -83,7 +100,7 @@
 		BBFE2F302BA1AA2300094AF1 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				BBFE2F372BA1ABFC00094AF1 /* Search.swift */,
+				BBCEEF022BA3214D00B11226 /* Search */,
 				BBFE2F2C2BA1A43C00094AF1 /* Favourites.swift */,
 				BBFE2F312BA1AA5D00094AF1 /* Responses.swift */,
 				BBFE2F332BA1AAF700094AF1 /* Messages.swift */,
@@ -163,10 +180,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBCEEF042BA3218B00B11226 /* SearchPanel.swift in Sources */,
 				BBFE2F322BA1AA5D00094AF1 /* Responses.swift in Sources */,
+				BBCEEF062BA3223E00B11226 /* SearchInformation.swift in Sources */,
 				BBFE2F342BA1AAF700094AF1 /* Messages.swift in Sources */,
 				BBFE2F212BA1928500094AF1 /* TabBar.swift in Sources */,
 				BBFE2F362BA1AB8700094AF1 /* Profile.swift in Sources */,
+				BBCEEF082BA3232A00B11226 /* SearchVacancy.swift in Sources */,
 				BBFE2F1F2BA1928500094AF1 /* JobSearchApp.swift in Sources */,
 				BBFE2F382BA1ABFC00094AF1 /* Search.swift in Sources */,
 				BBFE2F2D2BA1A43C00094AF1 /* Favourites.swift in Sources */,
