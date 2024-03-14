@@ -74,18 +74,20 @@ struct SearchVacancy: View {
                     .padding(Constants.padding)
                     .background(CustomColor.gray1)
                     HStack {
-                        Button {
-                            
+                        NavigationLink {
+                            Vacancy()
                         } label: {
                             Text("Откликнуться")
                                 .font(.system(size: 14))
                                 .foregroundStyle(.white)
+                                .frame(maxWidth: .infinity)
+                                .frame(height: Constants.btnHeight)
+                                .background(CustomColor.green)
+                                .clipShape(RoundedRectangle(cornerRadius: Constants.btnCorderRadius,
+                                                            style: .continuous))
                         }
-                        .frame(maxWidth: .infinity)
-                        .frame(height: Constants.btnHeight)
-                        .background(CustomColor.green)
-                        .clipShape(RoundedRectangle(cornerRadius: Constants.btnCorderRadius,
-                                                    style: .continuous))
+
+                        
                     }
                     .padding(EdgeInsets(top: 0,
                                         leading: Constants.padding,
@@ -103,7 +105,6 @@ struct SearchVacancy: View {
 
         VStack {
             Button {
-                
             } label: {
                 Text("Еще 143 вакансии")
                     .font(.system(size: 16, weight: .semibold))

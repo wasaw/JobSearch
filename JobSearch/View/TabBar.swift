@@ -13,46 +13,48 @@ struct TabBar: View {
     }
     
     var body: some View {
-        TabView {
-            ScrollView {
-                Search()
+        NavigationStack {
+            TabView {
+                ScrollView {
+                    Search()
+                }
+                .padding(.bottom, 5)
+                .background(.black)
+                .tabItem {
+                    VStack {
+                        Text("Поиск")
+                        Image("Search").renderingMode(.template)
+                    }
+                }
+                Favourites()
+                    .tabItem {
+                        VStack {
+                            Text("Избранное")
+                            Image("Heart").renderingMode(.template)
+                        }
+                    }
+                Responses()
+                    .tabItem {
+                        VStack {
+                            Text("Отклики")
+                            Image("Vector").renderingMode(.template)
+                        }
+                    }
+                Messages()
+                    .tabItem {
+                        VStack {
+                            Text("Сообщения")
+                            Image("Message").renderingMode(.template)
+                        }
+                    }
+                Profile()
+                    .tabItem {
+                        VStack() {
+                            Text("Профиль")
+                            Image("Profile").renderingMode(.template)
+                        }
+                    }
             }
-            .padding(.bottom, 5)
-            .background(.black)
-            .tabItem {
-                VStack {
-                    Text("Поиск")
-                    Image("Search").renderingMode(.template)
-                }
-            }
-            Favourites()
-                .tabItem {
-                    VStack {
-                        Text("Избранное")
-                        Image("Heart").renderingMode(.template)
-                    }
-                }
-            Responses()
-                .tabItem {
-                    VStack {
-                        Text("Отклики")
-                        Image("Vector").renderingMode(.template)
-                    }
-                }
-            Messages()
-                .tabItem {
-                    VStack {
-                        Text("Сообщения")
-                        Image("Message").renderingMode(.template)
-                    }
-                }
-            Profile()
-                .tabItem {
-                    VStack() {
-                        Text("Профиль")
-                        Image("Profile").renderingMode(.template)
-                    }
-                }
         }
     }
 }
