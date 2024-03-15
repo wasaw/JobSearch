@@ -86,8 +86,6 @@ struct SearchVacancy: View {
                                 .clipShape(RoundedRectangle(cornerRadius: Constants.btnCorderRadius,
                                                             style: .continuous))
                         }
-
-                        
                     }
                     .padding(EdgeInsets(top: 0,
                                         leading: Constants.padding,
