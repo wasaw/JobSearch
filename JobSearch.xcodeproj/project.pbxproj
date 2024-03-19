@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB0F7BC72BA9B2030049A98F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0F7BC62BA9B2030049A98F /* Extensions.swift */; };
 		BBCEEF042BA3218B00B11226 /* SearchPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCEEF032BA3218B00B11226 /* SearchPanel.swift */; };
 		BBCEEF062BA3223E00B11226 /* SearchInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCEEF052BA3223E00B11226 /* SearchInformation.swift */; };
 		BBCEEF082BA3232A00B11226 /* SearchVacancy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCEEF072BA3232A00B11226 /* SearchVacancy.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB0F7BC62BA9B2030049A98F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		BBCEEF032BA3218B00B11226 /* SearchPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPanel.swift; sourceTree = "<group>"; };
 		BBCEEF052BA3223E00B11226 /* SearchInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInformation.swift; sourceTree = "<group>"; };
 		BBCEEF072BA3232A00B11226 /* SearchVacancy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVacancy.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 			children = (
 				BBFE2F302BA1AA2300094AF1 /* View */,
 				BBFE2F1E2BA1928500094AF1 /* JobSearchApp.swift */,
+				BB0F7BC62BA9B2030049A98F /* Extensions.swift */,
 				BBFE2F222BA1928700094AF1 /* Assets.xcassets */,
 				BBFE2F2E2BA1A7CF00094AF1 /* Model.swift */,
 				BBFE2F242BA1928700094AF1 /* Preview Content */,
@@ -207,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBCEEF042BA3218B00B11226 /* SearchPanel.swift in Sources */,
+				BB0F7BC72BA9B2030049A98F /* Extensions.swift in Sources */,
 				BBFE2F322BA1AA5D00094AF1 /* Responses.swift in Sources */,
 				BBCEEF062BA3223E00B11226 /* SearchInformation.swift in Sources */,
 				BBCEEF152BA4496E00B11226 /* VacancyResponse.swift in Sources */,

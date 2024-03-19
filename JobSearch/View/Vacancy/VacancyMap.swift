@@ -23,7 +23,7 @@ struct VacancyMap: View {
             VStack {
                 HStack {
                     Text("Мобирикс")
-                        .font(.system(size: 16, weight: .medium))
+                        .title3()
                         .foregroundStyle(.white)
                     Image("CheckmarkOk")
                     Spacer()
@@ -34,7 +34,7 @@ struct VacancyMap: View {
                 .frame(height: 134)
                 HStack {
                     Text("Минск, улица Бирюзова, 4/5")
-                        .font(.system(size: 14))
+                        .text1()
                         .foregroundStyle(.white)
                     Spacer()
                 }

@@ -32,14 +32,14 @@ struct SearchInformation: View {
                         }
                         .padding(8)
                         Text("Вакансии радом с вами")
-                            .font(.system(size: 14, weight: .medium))
+                            .title4()
                             .foregroundStyle(.white)
                         HStack {
                             Button {
                                 
                             } label: {
                                 Text("Поднять")
-                                    .font(.system(size: 14))
+                                    .text1()
                                     .foregroundStyle(CustomColor.green)
                             }
                             Spacer()

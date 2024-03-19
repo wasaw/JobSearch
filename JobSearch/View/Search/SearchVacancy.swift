@@ -26,7 +26,7 @@ Array(repeating: .init(.flexible()), count: 1)
 struct SearchVacancy: View {
     var body: some View {
         Text("Вакансии для вас")
-            .font(.system(size: 20, weight: .semibold))
+            .title2()
             .foregroundStyle(.white)
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding(.leading,
@@ -38,22 +38,22 @@ struct SearchVacancy: View {
                     VStack(alignment: .leading, spacing: 0) {
                         HStack {
                             Text("Сейчас проматривают 1 человек")
-                                .font(.system(size: 14))
+                                .text1()
                                 .foregroundStyle(CustomColor.green)
                             Spacer()
                             Image("Heart")
                         }
                         Text("UI/UX Designer")
-                            .font(.system(size: 16, weight: .medium))
+                            .title3()
                             .foregroundStyle(.white)
                             .padding(.top, Constants.paddingTop)
                         Text("Минск")
-                            .font(.system(size: 14))
+                            .text1()
                             .foregroundStyle(.white)
                             .padding(.top, Constants.paddingTop)
                         HStack {
                             Text("Мобирикс")
-                                .font(.system(size: 14))
+                                .text1()
                                 .foregroundStyle(.white)
                             Image("CheckmarkOk")
                         }
@@ -61,12 +61,12 @@ struct SearchVacancy: View {
                         HStack {
                             Image("Experiens")
                             Text("Опыт от 1 года до 3 лет")
-                                .font(.system(size: 14))
+                                .text1()
                                 .foregroundStyle(.white)
                         }
                         .padding(.top, Constants.paddingTop)
                         Text("Опубликовано 20 февраля")
-                            .font(.system(size: 14))
+                            .text1()
                             .foregroundStyle(CustomColor.gray3)
                             .padding(.top, Constants.paddingTop)
                     }
@@ -78,7 +78,7 @@ struct SearchVacancy: View {
                             Vacancy()
                         } label: {
                             Text("Откликнуться")
-                                .font(.system(size: 14))
+                                .text1()
                                 .foregroundStyle(.white)
                                 .frame(maxWidth: .infinity)
                                 .frame(height: Constants.btnHeight)
@@ -105,7 +105,7 @@ struct SearchVacancy: View {
             Button {
             } label: {
                 Text("Еще 143 вакансии")
-                    .font(.system(size: 16, weight: .semibold))
+                    .buttonText1()
                     .foregroundStyle(.white)
             }
             .frame(height: Constants.btnAddHeight)

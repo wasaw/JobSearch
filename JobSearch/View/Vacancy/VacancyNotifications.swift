@@ -23,7 +23,7 @@ struct VacancyNotifications: View {
             HStack {
                 HStack(alignment: .top, content: {
                     Text("147 человек уже откликнулись")
-                        .font(.system(size: 14))
+                        .text1()
                         .foregroundStyle(.white)
                     Image("PeopleGreen")
                 })
@@ -35,7 +35,7 @@ struct VacancyNotifications: View {
                                         style: .continuous))
             HStack(alignment: .top, content: {
                 Text("2 человека сейчас смотрят")
-                    .font(.system(size: 14))
+                    .text1()
                     .foregroundStyle(.white)
                 Image("EyeGreen")
             })

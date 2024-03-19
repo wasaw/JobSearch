@@ -13,13 +13,15 @@ struct TabBar: View {
     }
     
     var body: some View {
-        NavigationStack {
-            TabView {
-                ScrollView {
-                    Search()
+        TabView {
+            Group {
+                NavigationStack {
+                    ScrollView {
+                        Search()
+                    }
+                    .padding(.bottom, 5)
+                    .background(.black)
                 }
-                .padding(.bottom, 5)
-                .background(.black)
                 .tabItem {
                     VStack {
                         Text("Поиск")
@@ -55,6 +57,7 @@ struct TabBar: View {
                         }
                     }
             }
+            .toolbarBackground(Color.black, for: .tabBar)
         }
     }
 }

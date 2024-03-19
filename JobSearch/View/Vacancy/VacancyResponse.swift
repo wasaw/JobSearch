@@ -25,14 +25,14 @@ struct VacancyResponse: View {
     var body: some View {
         HStack {
             Text("Задайте вопрос работадателю")
-                .font(.system(size: 14, weight: .medium))
+                .title4()
                 .foregroundStyle(.white)
             Spacer()
         }
         .padding(.leading, Constants.padding)
         HStack {
             Text("Он получит его с откликом на вакансию")
-                .font(.system(size: 14, weight: .medium))
+                .title4()
                 .foregroundStyle(CustomColor.gray3)
             Spacer()
         }
@@ -42,7 +42,7 @@ struct VacancyResponse: View {
             ForEach((0...3), id: \.self) {_ in
                 HStack {
                     Text("Где располашается место работы?")
-                        .font(.system(size: 14, weight: .medium))
+                        .title4()
                         .foregroundStyle(.white)
                         .padding(Constants.padding)
                         .background(CustomColor.gray2)
@@ -62,7 +62,7 @@ struct VacancyResponse: View {
                 
             } label: {
                 Text("Откликнуться")
-                    .font(.system(size: 16, weight: .semibold))
+                    .buttonText1()
                     .foregroundStyle(.white)
             }
             .frame(maxWidth: .infinity)

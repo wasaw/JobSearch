@@ -27,7 +27,7 @@ struct SearchPanel: View {
                     .renderingMode(.template)
                     .foregroundStyle(CustomColor.gray4)
                 Text("Должность, ключевые слова")
-                    .font(.system(size: 14))
+                    .text1()
                     .foregroundStyle(CustomColor.gray4)
                 Spacer()
             }
