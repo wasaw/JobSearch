@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		BB0F7BC72BA9B2030049A98F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0F7BC62BA9B2030049A98F /* Extensions.swift */; };
+		BB0F7BCB2BAADB680049A98F /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0F7BCA2BAADB680049A98F /* Network.swift */; };
+		BB667AFD2BAB294B00DA11F4 /* VacanciesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB667AFC2BAB294B00DA11F4 /* VacanciesViewModel.swift */; };
 		BBCEEF042BA3218B00B11226 /* SearchPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCEEF032BA3218B00B11226 /* SearchPanel.swift */; };
 		BBCEEF062BA3223E00B11226 /* SearchInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCEEF052BA3223E00B11226 /* SearchInformation.swift */; };
 		BBCEEF082BA3232A00B11226 /* SearchVacancy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCEEF072BA3232A00B11226 /* SearchVacancy.swift */; };
@@ -31,6 +33,8 @@
 
 /* Begin PBXFileReference section */
 		BB0F7BC62BA9B2030049A98F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		BB0F7BCA2BAADB680049A98F /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		BB667AFC2BAB294B00DA11F4 /* VacanciesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacanciesViewModel.swift; sourceTree = "<group>"; };
 		BBCEEF032BA3218B00B11226 /* SearchPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPanel.swift; sourceTree = "<group>"; };
 		BBCEEF052BA3223E00B11226 /* SearchInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInformation.swift; sourceTree = "<group>"; };
 		BBCEEF072BA3232A00B11226 /* SearchVacancy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVacancy.swift; sourceTree = "<group>"; };
@@ -64,6 +68,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB0F7BC82BAADB320049A98F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BB0F7BC92BAADB3F0049A98F /* Network */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		BB0F7BC92BAADB3F0049A98F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				BB0F7BCA2BAADB680049A98F /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		BB667AFE2BAB295000DA11F4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BB667AFC2BAB294B00DA11F4 /* VacanciesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BB667AFF2BAB2A7300DA11F4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BB0F7BC62BA9B2030049A98F /* Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		BBCEEF022BA3214D00B11226 /* Search */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,10 +144,12 @@
 			isa = PBXGroup;
 			children = (
 				BBFE2F302BA1AA2300094AF1 /* View */,
+				BB0F7BC82BAADB320049A98F /* Service */,
+				BB667AFE2BAB295000DA11F4 /* ViewModel */,
+				BB667AFF2BAB2A7300DA11F4 /* Utils */,
 				BBFE2F1E2BA1928500094AF1 /* JobSearchApp.swift */,
-				BB0F7BC62BA9B2030049A98F /* Extensions.swift */,
-				BBFE2F222BA1928700094AF1 /* Assets.xcassets */,
 				BBFE2F2E2BA1A7CF00094AF1 /* Model.swift */,
+				BBFE2F222BA1928700094AF1 /* Assets.xcassets */,
 				BBFE2F242BA1928700094AF1 /* Preview Content */,
 			);
 			path = JobSearch;
@@ -213,6 +251,7 @@
 				BB0F7BC72BA9B2030049A98F /* Extensions.swift in Sources */,
 				BBFE2F322BA1AA5D00094AF1 /* Responses.swift in Sources */,
 				BBCEEF062BA3223E00B11226 /* SearchInformation.swift in Sources */,
+				BB667AFD2BAB294B00DA11F4 /* VacanciesViewModel.swift in Sources */,
 				BBCEEF152BA4496E00B11226 /* VacancyResponse.swift in Sources */,
 				BBFE2F342BA1AAF700094AF1 /* Messages.swift in Sources */,
 				BBFE2F212BA1928500094AF1 /* TabBar.swift in Sources */,
@@ -221,6 +260,7 @@
 				BBFE2F362BA1AB8700094AF1 /* Profile.swift in Sources */,
 				BBCEEF082BA3232A00B11226 /* SearchVacancy.swift in Sources */,
 				BBFE2F1F2BA1928500094AF1 /* JobSearchApp.swift in Sources */,
+				BB0F7BCB2BAADB680049A98F /* Network.swift in Sources */,
 				BBCEEF0F2BA4459200B11226 /* VacancyNotifications.swift in Sources */,
 				BBFE2F382BA1ABFC00094AF1 /* Search.swift in Sources */,
 				BBCEEF132BA446CF00B11226 /* VacancyDescription.swift in Sources */,

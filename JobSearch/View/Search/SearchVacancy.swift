@@ -24,6 +24,8 @@ Array(repeating: .init(.flexible()), count: 1)
 // MARK: - Core
 
 struct SearchVacancy: View {
+    @StateObject var viewModel = VacanciesViewModel()
+    
     var body: some View {
         Text("Вакансии для вас")
             .title2()
@@ -33,26 +35,32 @@ struct SearchVacancy: View {
                      Constants.padding)
         
         LazyVGrid(columns: rows, alignment: .center, spacing: Constants.spacing) {
-            ForEach((0...1), id: \.self) {_ in
+            ForEach(viewModel.vacancies, id: \.id) { vacancy in
                 VStack {
                     VStack(alignment: .leading, spacing: 0) {
                         HStack {
-                            Text("Сейчас проматривают 1 человек")
-                                .text1()
-                                .foregroundStyle(CustomColor.green)
+                            if let lookingNumber = vacancy.lookingNumber {
+                                Text("Сейчас проматривают \(lookingNumber) человек")
+                                    .text1()
+                                    .foregroundStyle(CustomColor.green)
+                            } else {
+                                Text("Сейчас никто не просматривает")
+                                    .text1()
+                                    .foregroundStyle(CustomColor.green)
+                            }
                             Spacer()
-                            Image("Heart")
+                            Image(vacancy.isFavorite ? "Heart" : "HeartFull")
                         }
-                        Text("UI/UX Designer")
+                        Text(vacancy.title)
                             .title3()
                             .foregroundStyle(.white)
                             .padding(.top, Constants.paddingTop)
-                        Text("Минск")
+                        Text(vacancy.address.town)
                             .text1()
                             .foregroundStyle(.white)
                             .padding(.top, Constants.paddingTop)
                         HStack {
-                            Text("Мобирикс")
+                            Text(vacancy.company)
                                 .text1()
                                 .foregroundStyle(.white)
                             Image("CheckmarkOk")
@@ -60,12 +68,13 @@ struct SearchVacancy: View {
                         .padding(.top, Constants.paddingTop / 2)
                         HStack {
                             Image("Experiens")
-                            Text("Опыт от 1 года до 3 лет")
+                            Text(vacancy.experience.previewText)
                                 .text1()
                                 .foregroundStyle(.white)
                         }
                         .padding(.top, Constants.paddingTop)
-                        Text("Опубликовано 20 февраля")
+                        let data = conversionDate(vacancy.publishedDate)
+                        Text("Опубликовано \(data)")
                             .text1()
                             .foregroundStyle(CustomColor.gray3)
                             .padding(.top, Constants.paddingTop)
@@ -115,6 +124,17 @@ struct SearchVacancy: View {
                                         style: .continuous))
         }
         .padding(Constants.padding)
+    }
+    
+// MARK: - Helpers
+    
+    private func conversionDate(_ dateFrom: String) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "ru_RU")
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        guard let date = dateFormatter.date(from: dateFrom) else { return ""}
+        dateFormatter.dateFormat = "dd MMMM"
+        return dateFormatter.string(from: date)
     }
 }
 

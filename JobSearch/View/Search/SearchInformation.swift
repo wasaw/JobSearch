@@ -14,6 +14,7 @@ private enum Constants {
     static let cornerRadius: CGFloat = 8
     static let informaionWidth: CGFloat = 132
     static let informationHeight: CGFloat = 120
+    static let viewHeight: CGFloat = 150
 }
 private let rows: [GridItem] =
 Array(repeating: .init(.flexible()), count: 1)
@@ -56,7 +57,7 @@ struct SearchInformation: View {
             .background(.black)
         }
         .padding(Constants.padding)
-
+        .frame(height: Constants.viewHeight)
     }
 }
 
